@@ -1,0 +1,91 @@
+//fonts
+a, p, h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+// общая ширина
+.container_shoes, .container_header, footer  {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+// отступ для fixed
+
+body {
+    padding-top: 100px;
+}
+
+//header
+@import './fragmentHeader';
+
+//container shoes
+
+.shoes_main {
+    display: flex;
+}
+
+.shoes_flex {
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+.one_of_all_shoes{
+    width: 290px;
+    height: 400px;
+    margin-right: 28px;
+}
+
+.shoes_img {
+    width: 290px;
+    height: 290px;
+}
+
+//aside
+aside {
+    width: 230px;
+    margin-right:28px;
+    flex-shrink: 0;
+}
+
+.shoetype_and_parameters {
+   
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    margin: 0px;
+}
+
+.shoes_type, .parameters {
+    
+    border: 1px solid rgb(216, 214, 214);
+    margin-bottom: 30px;
+}
+
+.shoes_type_one {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+
+
+input, select {
+    width: 95%;
+    padding: 10px;
+}
+
+
+
+//footer
+@import './fragmentFooter';
+
+//media
+@import './fragmentMediaStyleTwo';

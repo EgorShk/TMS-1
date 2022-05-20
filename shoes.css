@@ -1,0 +1,202 @@
+a, p, h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container_shoes, .container_header, footer {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+body {
+  padding-top: 100px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.container_header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.header_logo {
+  width: 230px;
+  height: 80px;
+}
+
+.header_nav {
+  align-self: center;
+}
+.header_nav ul {
+  list-style: none;
+  margin: 0;
+}
+.header_nav ul li {
+  display: inline;
+  padding-right: 20px;
+}
+.header_nav .header_link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.header_nav .search_icon, .header_nav .shopping_cart_icon {
+  width: 25px;
+  height: 25px;
+}
+.header_nav a:hover, .header_nav .header_link:hover {
+  color: #c0b8b8;
+}
+
+.shoes_main {
+  display: flex;
+}
+
+.shoes_flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20px;
+}
+
+.one_of_all_shoes {
+  width: 290px;
+  height: 400px;
+  margin-right: 28px;
+}
+
+.shoes_img {
+  width: 290px;
+  height: 290px;
+}
+
+aside {
+  width: 230px;
+  margin-right: 28px;
+  flex-shrink: 0;
+}
+
+.shoetype_and_parameters {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  margin: 0px;
+}
+
+.shoes_type, .parameters {
+  border: 1px solid rgb(216, 214, 214);
+  margin-bottom: 30px;
+}
+
+.shoes_type_one {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+input, select {
+  width: 95%;
+  padding: 10px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands_and_other, .customers {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+a.link {
+  color: white;
+  text-decoration: none;
+}
+
+.contacts_and_social_network {
+  margin: 20px;
+}
+.contacts_and_social_network .social_network {
+  width: 135px;
+}
+
+.facebook:hover, .instagram:hover, .twitter:hover {
+  animation-name: social;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.brands_and_other, .customers, .contacts_and_social_network {
+  width: 250px;
+}
+
+.link:hover {
+  color: #c0b8b8;
+}
+
+@keyframes social {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+@media all and (max-width: 1582px) {
+  .shoes_flex {
+    justify-content: center;
+  }
+}
+@media all and (max-width: 960px) {
+  .shoes_main {
+    flex-wrap: wrap;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .container_header {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+@media all and (max-width: 935px) {
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social_network {
+    justify-content: center;
+  }
+}
+@media all and (max-width: 865px) {
+  .container_header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  body {
+    padding-top: 150px;
+  }
+}
+
+/*# sourceMappingURL=shoes.css.map */

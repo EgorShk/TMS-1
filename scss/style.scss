@@ -1,0 +1,138 @@
+//fonts
+a, p, h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+// общая ширина
+.container_grid, .container_header, .container_blog, footer  {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+// отступ для fixed
+
+body {
+    padding-top: 100px;
+}
+
+//header
+@import './fragmentHeader';
+
+//main
+
+.main_grid {
+ 
+    display: grid;
+    grid-template-columns: repeat (5, 300px) ;
+    grid-template-rows: repeat (4, 300px);
+    gap: 50px;
+    column-gap: 50px;
+    z-index: 1;
+}
+
+.flex_text {
+    width: 300px;
+    height: 200px;
+    color: white;  
+}
+
+.flex_text_one {
+    font-size: 60px; 
+    margin: 0px;
+    
+}
+
+.flex_text_two {
+    font-size: 20px; 
+}
+
+.button_catalog {
+    width: 200px;
+    height: 46px;
+    border: 2px solid white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.shoes {
+    position: relative;
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.description_shoes,
+.description_clothing,
+.description_skates,
+.description_accessories {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.clothing {
+    position: relative;
+    grid-area: 1 / 3 / 3 / 6;   
+}
+
+
+.skates {
+    grid-area: 3 / 1 / 5 / 4;
+    position: relative;
+}
+
+.accessories {
+    grid-area: 3 / 4 / 5 / 6;
+    position: relative;
+}
+
+
+//our_dignity
+.our_dignity { 
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px 30px 0px;
+}
+
+.our_dignity_one_of_three {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 40px 0px 40px;
+    text-align: center;
+}
+
+.our_dignity_img {
+    width: 150px;
+    height: 150px;
+}
+
+//blog
+.blog_hover_text {
+    font-size: 40px;
+    width: 100px;
+    border-bottom: 2px solid black;
+    
+}
+
+.slide_text_one {
+    font-size: 50px;
+}
+
+.slide_text_two {
+    font-size:40px;
+} 
+
+.container_blog {
+    margin-bottom: 3px;
+}
+
+
+
+//footer
+@import './fragmentFooter';
+
+//media
+@import './fragmentMedia';

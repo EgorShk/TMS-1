@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <title>Quick Style</title>
+</head>
+<body>
+    <header>
+        <div class="container_header">
+            <div class="header_logo">
+                <img src="./images/header_logo.jpg" alt="header_logo">
+            </div>
+            <div class="header_nav">
+                <ul>
+                    <li><a href="#" class="header_link" >ГЛАВНАЯ</a></li>
+                    <li><a href="#" class="header_link" >КАТАЛОГ</a></li>
+                    <li><a href="#" class="header_link" >НОВИНКИ</a></li>
+                    <li><a href="#" class="header_link" >РАСПРОДАЖА</a></li>
+                    <li><a href="#" class="header_link" >КОНТАКТЫ</a></li>
+                    <li><a href="#" > <img class="search_icon" src="./icons/Search_icon.jpg" alt=""></a></li>
+                    <li><a href="#" > <img class="shopping_cart_icon" src="./icons/shopping_cart.jpg" alt=""></a></li>
+                </ul>
+            </div> 
+        </div>
+    </header>
+    <div class="container_grid">
+        <div class="main_grid">
+            <div class="shoes">
+                <img  src="./images/shoes.jpg" alt="Обувь">
+                <div class="description_shoes">
+                    <div class="flex_text">
+                        <p class="flex_text_one">Обувь</p>
+                        <p class="flex_text_two">Твоя свобода передвижения</p>
+                         <a class="link" href="./shoes.html"><p class="button_catalog">ПЕРЕЙТИ В КАТАЛОГ</p></a>
+                     </div> 
+                </div> 
+            </div>
+            <div class="clothing">
+                <img src="./images/clothing.jpg" alt="Одежда">
+                <div class="description_clothing">
+                    <div class="flex_text">
+                        <p class="flex_text_one">Одежда</p>
+                        <p class="flex_text_two">Для тех, кто ценит лучшее</p>
+                        <p class="button_catalog">ПЕРЕЙТИ В КАТАЛОГ</p>
+                    </div>
+                </div>    
+            </div>
+            <div class="skates">
+                <img src="./images/skateboard.jpg"  alt="Скейты">
+                <div class="description_skates">
+                    <div class="flex_text">
+                        <p class="flex_text_one">Скейты</p>
+                        <p class="flex_text_two">Выбирай свою доску</p>
+                        <p class="button_catalog">ПЕРЕЙТИ В КАТАЛОГ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accessories">
+                <img src="./images/accessories.jpg" alt="Аксессуары">
+                <div class="description_accessories">
+                    <div class="flex_text">
+                        <p class="flex_text_one">Аксессуары</p>
+                        <p class="flex_text_two">Дополни свой стиль</p>
+                        <p class="button_catalog">ПЕРЕЙТИ В КАТАЛОГ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="our_dignity">
+            <div class="our_dignity_one_of_three">
+                <img class="our_dignity_img" src="./icons/Dollar.jpg" alt="">  
+                <h4>ЛУЧШИЕ ЦЕНЫ</h4>  
+                <p>Самый большой выбор товаров</p>
+            </div>  
+            <div class="our_dignity_one_of_three">
+                <img class="our_dignity_img" src="./icons/World.png" alt="">  
+                <h4>ШИРОКИЙ АССОРТИМЕНТ</h4>  
+                <p>Поставки со всего мира</p>     
+            </div> 
+            <div class="our_dignity_one_of_three">
+                <img class="our_dignity_img" src="./icons/phone_call.png" alt="">  
+                <h4>ПОДДЕРЖКА ОНЛАЙН</h4>  
+                <p>Помощь консультантов 27/4</p>              
+            </div>
+        </div>    
+    </div>
+    <div class="container_blog"> 
+        <div class="blog">
+            <p class="blog_hover_text">Блог</p>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/first_slide.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="slide_text_one" >Ollie или Kickflip?</h5>
+                      <p class="slide_text_two">Топ трюков на скейтборде</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/second_slide.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="slide_text_one">Выбираем доску</h5>
+                      <p class="slide_text_two">Рекоммендации по выбору скейта</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/slide_three.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="slide_text_one">May the Force be with you!</h5>
+                      <p class="slide_text_two">Новая коллекция скейтов Star Wars</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div> 
+    </div>     
+    <footer>
+        <div class="brands_and_other">
+            <h4>О магазине</h4>
+            <a class="link" href="#" class="our_team" >Наша команда</a>
+            <a class="link" class="link"href="#" class="brands" >Бренды</a>
+            <a class="link" href="#" class="work" >Работа в QS</a>
+            <a class="link" href="#" class="partners" >Наши партнеры</a>
+            <a class="link" href="#" class="collaboration" >Сотрудничество</a>      
+        </div>  
+        <div class="customers">
+            <h4>Покупателям</h4>
+            <a class="link" href="#" class="orders" >Заказы</a>  
+            <a class="link" href="#" class="shipping" >Доставка</a> 
+            <a class="link" href="#" class="return" >Возврат и обмен товара</a> 
+            <a class="link" href="#" class="size_information" >Таблица размеров</a> 
+            <a class="link" href="#" class="disciunt_program" >Дисконтная программа</a> 
+        </div> 
+        <div class="contacts_and_social_network">
+            <div class="contacts">
+                <h4>Контакты</h4>
+                <p> Минск, пр-т Независимости, 3-2,<br>
+                         ТЦ «Столица», помещение 323,<br>
+                        нижний уровень<br>
+                        ЕЖЕДНЕВНО С  10:00 – 22:00<br>
+                        8 (029) 644-52-64
+                </p>
+                <div class="social_network_icon">
+                    <a href="#" ><img class="facebook" src="./icons/facebook.png" width="40px"  height="40px" alt=""></a> 
+                    <a href="#" ><img class="instagram" src="./icons/instagram.png" width="40px"  height="40px" alt=""></a> 
+                    <a href="#" ><img class="twitter" src="./icons/telegram.png" width="40px"  height="40px" alt=""></a> 
+                </div>
+            </div>
+        </div>   
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>     
+    
+</body>
+</html>

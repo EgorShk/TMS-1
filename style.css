@@ -1,0 +1,276 @@
+a, p, h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container_grid, .container_header, .container_blog, footer {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+body {
+  padding-top: 100px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.container_header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.header_logo {
+  width: 230px;
+  height: 80px;
+}
+
+.header_nav {
+  align-self: center;
+}
+.header_nav ul {
+  list-style: none;
+  margin: 0;
+}
+.header_nav ul li {
+  display: inline;
+  padding-right: 20px;
+}
+.header_nav .header_link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.header_nav .search_icon, .header_nav .shopping_cart_icon {
+  width: 25px;
+  height: 25px;
+}
+.header_nav a:hover, .header_nav .header_link:hover {
+  color: #c0b8b8;
+}
+
+.main_grid {
+  display: grid;
+  grid-template-columns: repeat 5, 300px;
+  grid-template-rows: repeat 4, 300px;
+  gap: 50px;
+  column-gap: 50px;
+  z-index: 1;
+}
+
+.flex_text {
+  width: 300px;
+  height: 200px;
+  color: white;
+}
+
+.flex_text_one {
+  font-size: 60px;
+  margin: 0px;
+}
+
+.flex_text_two {
+  font-size: 20px;
+}
+
+.button_catalog {
+  width: 200px;
+  height: 46px;
+  border: 2px solid white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.shoes {
+  position: relative;
+  grid-area: 1/1/3/3;
+}
+
+.description_shoes,
+.description_clothing,
+.description_skates,
+.description_accessories {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.clothing {
+  position: relative;
+  grid-area: 1/3/3/6;
+}
+
+.skates {
+  grid-area: 3/1/5/4;
+  position: relative;
+}
+
+.accessories {
+  grid-area: 3/4/5/6;
+  position: relative;
+}
+
+.our_dignity {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px 30px 0px;
+}
+
+.our_dignity_one_of_three {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 40px 0px 40px;
+  text-align: center;
+}
+
+.our_dignity_img {
+  width: 150px;
+  height: 150px;
+}
+
+.blog_hover_text {
+  font-size: 40px;
+  width: 100px;
+  border-bottom: 2px solid black;
+}
+
+.slide_text_one {
+  font-size: 50px;
+}
+
+.slide_text_two {
+  font-size: 40px;
+}
+
+.container_blog {
+  margin-bottom: 3px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands_and_other, .customers {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+a.link {
+  color: white;
+  text-decoration: none;
+}
+
+.contacts_and_social_network {
+  margin: 20px;
+}
+.contacts_and_social_network .social_network {
+  width: 135px;
+}
+
+.facebook:hover, .instagram:hover, .twitter:hover {
+  animation-name: social;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.brands_and_other, .customers, .contacts_and_social_network {
+  width: 250px;
+}
+
+.link:hover {
+  color: #c0b8b8;
+}
+
+@keyframes social {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media all and (max-width: 1100px) {
+  .header_logo {
+    margin: 0 auto;
+  }
+
+  .container_header {
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 1050px) {
+  .main_grid {
+    grid-template-columns: repeat 1, 600px;
+    grid-template-rows: repeat 4, 600px;
+    gap: 50px;
+  }
+
+  .shoes {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0 auto;
+  }
+
+  .clothing {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0 auto;
+  }
+
+  .skates {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: 0 auto;
+  }
+
+  .accessories {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 935px) {
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social_network {
+    justify-content: center;
+  }
+}
+@media all and (max-width: 865px) {
+  .container_header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 700px) {
+  .our_dignity {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

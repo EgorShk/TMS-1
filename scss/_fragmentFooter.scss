@@ -1,0 +1,52 @@
+footer {  
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brands_and_other, .customers {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+a.link {
+    color: white;
+    text-decoration: none;
+}
+
+.contacts_and_social_network {
+    margin: 20px;
+
+    .social_network {
+        width: 135px;
+    }
+}
+
+.facebook:hover, .instagram:hover, .twitter:hover {
+    animation-name: social ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+
+.brands_and_other, .customers, .contacts_and_social_network {
+    width: 250px;
+}
+
+.link {
+    &:hover {
+        color: #c0b8b8;   
+    }     
+}
+
+@keyframes social {
+    0% {
+        transform: scale(1); 
+      }
+      
+      100% { 
+        transform: scale(1.2);
+      }
+  }
+

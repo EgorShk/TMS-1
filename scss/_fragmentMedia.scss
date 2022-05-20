@@ -1,0 +1,84 @@
+img { 
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  
+
+@media all and (max-width:1100px) {
+    
+    .header_logo {
+        margin: 0 auto;
+    }
+    
+    .container_header {
+        flex-wrap: wrap;
+        padding-bottom: 20px; 
+        margin: 0 auto; 
+        justify-content: center; 
+    }
+
+   
+}
+
+@media all and (max-width:1050px) {
+.main_grid{
+        
+    grid-template-columns: repeat (1, 600px) ;
+    grid-template-rows: repeat (4, 600px);
+    gap: 50px;
+    }
+
+    .shoes {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0 auto;
+        
+        
+    }
+    
+    .clothing {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0 auto;
+    }
+    
+    .skates {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 0 auto;
+    }
+    
+    .accessories {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin: 0 auto;
+    }
+
+ }
+@media all and (max-width:935px) {
+    footer {
+        flex-wrap: wrap; 
+        justify-content: center;      
+    }
+    
+    .social_network {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:865px) {
+    .container_header {
+        flex-wrap: wrap; 
+        justify-content: center;      
+    }
+}
+
+
+
+@media all and (max-width:700px) {
+    .our_dignity {
+        flex-wrap: wrap; 
+        justify-content: center;      
+    }
+}
